@@ -14,6 +14,6 @@ body{
 .square {
 	width: 40vh;
 	height: 40vh;
-	background-color: royalblue;
+	background-color: lime;
 	border: 5px solid black;
 }
