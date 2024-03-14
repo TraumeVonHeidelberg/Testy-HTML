@@ -1,0 +1,19 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #303030;
+    height: 100vh;
+}
+.square {
+	width: 40vh;
+	height: 40vh;
+	background-color: royalblue;
+	border: 5px solid black;
+}
