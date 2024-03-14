@@ -2,21 +2,28 @@ const squareItem = document.getElementById('square')
 
 let shiftX = 0
 let shiftY = 0
+let rotate = 0
+
+let shiftValue = 10
 
 document.addEventListener('keydown', event => {
 	console.log(event)
 
 	if (event.key === 'ArrowDown') {
-		shiftY += 10
+		shiftY += shiftValue
 	} else if (event.key === 'ArrowUp') {
-		shiftY -= 10
+		shiftY -= shiftValue
 	} else if (event.key === 'ArrowLeft') {
-		shiftX -= 10
+		shiftX -= shiftValue
 	} else if (event.key === 'ArrowRight') {
-		shiftX += 10
+		shiftX += shiftValue
+	} else if (event.key === ' ') {
+		rotate += shiftValue
+	} else if (event.key === 'r') {
+		shiftX = 0
+		shiftY = 0
+		rotate = 0
 	}
 
-	console.log(window.screen.width)
-
-	squareItem.style.transform = `translate(${shiftX}px,${shiftY}px`
+	squareItem.style.transform = `translate(${shiftX}px,${shiftY}px rotate(${rotate}deg)`
 })
