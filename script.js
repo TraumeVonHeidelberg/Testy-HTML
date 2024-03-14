@@ -31,3 +31,10 @@ document.addEventListener('keydown', event => {
 document.addEventListener('input', () => {
 	shiftValue = Number(shiftManipulation.value)
 })
+
+document.addEventListener('keydown', event => {
+	if (event.key === 'r') {
+		shiftManipulation.value = 50
+		shiftValue = Number(shiftManipulation.value)
+	}
+})
